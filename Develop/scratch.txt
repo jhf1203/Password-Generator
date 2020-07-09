@@ -1,11 +1,29 @@
 What do we need to know?
 
-    - How many characters should the password be?
+    - How many characters should the password be?   (pwLength)
 
-        - Do you want lower case letters?
-        - Do you want upper case letters?
-        - Do you want numbers?
-        - Do you want symbols?
+    if (pwLength >= 8 || pwLength <= 128) {
+    var pwLowers = confirm("Do you want your password to contain lower case letters?");       
+    var pwUppers = confirm("Do you want your password to contain upper case letters?");
+    var pwNumbers = confirm("Do you want your password to contain numbers?");
+    var pwSymbols = confirm("Do you want your password to contain special characters?");
+    }
+
+    else {
+        alert(Your password must be between 8 and 128 characters in length)
+    }
+
+    }
+
+
+
+
+    }
+
+    (pwLowers) = confirm("Do you want your password to contain lower case letters?")       
+    (pwUppers) = confirm("Do you want your password to contain upper case letters?")
+    (pwNumbers) = confirm("Do you want your password to contain numbers?")
+    (pwSymbols) = confirm("Do you want your password to contain special characters?")
 
     REDIRECT IF:
 
