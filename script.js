@@ -29,60 +29,66 @@ function generatePassword() {
 
     } else {
 
-      alert("Sorry, your password must be between 8 and 128 characters in length.  Click 'Generate Password' and try again.");
+      alert("Sorry, your password must be between 8 and 128 characters in length.  Please click the button and try again.");
 
       }
 
+    if (pwUppers==false && pwLowers==false && pwNumbers==false && pwSymbols==false) {
 
-  // Arrays containing characters for potential passwords
-  var listUppers = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+      alert("Sorry, your password must contain at least one of the following character types:  Upper-case letters, lower-case letters, numbers, special characters.  Please click the button and try again.")
 
-  var listLowers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    } else {
 
-  var listNumbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+      // Arrays containing characters for potential passwords
+      var listUppers = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-  var listSymbols = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "|", "]", "}", "[", "{", ";", ":", "/", "?", ".", ">", ",", "<"];
+      var listLowers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-  // The below array will house all potential options for each password character based on the user's answers in lines 25-28.
-  var chosenOptions = [];
+      var listNumbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
-  // the four "if" statements below move the appropriate password character options into the chosenOptions array
-  if (pwUppers === true) {
+      var listSymbols = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "|", "]", "}", "[", "{", ";", ":", "/", "?", ".", ">", ",", "<"];
 
-    chosenOptions = chosenOptions.concat(listUppers)
-    
-  };
+      // The below array will house all potential options for each password character based on the user's answers in lines 25-28.
+      var chosenOptions = [];
 
-  if (pwLowers === true) {
+      // the four "if" statements below move the appropriate password character options into the chosenOptions array
+      if (pwUppers === true) {
 
-    chosenOptions = chosenOptions.concat(listLowers)
+        chosenOptions = chosenOptions.concat(listUppers)
+        
+      };
 
-  };
+      if (pwLowers === true) {
 
-  if (pwNumbers === true) {
+        chosenOptions = chosenOptions.concat(listLowers)
 
-    chosenOptions = chosenOptions.concat(listNumbers)
+      };
 
-  };
+      if (pwNumbers === true) {
 
-  if (pwSymbols === true) {
+        chosenOptions = chosenOptions.concat(listNumbers)
 
-    chosenOptions = chosenOptions.concat(listSymbols)
+      };
 
-  };
+      if (pwSymbols === true) {
 
-  // This is where the password is generated
-  var generatePassword = ""
+        chosenOptions = chosenOptions.concat(listSymbols)
 
-  for (var i = 0; i < pwLength; i++) {
+      };
 
-    // Here is where the characters are selected to go into the actual password
-    generatePassword += chosenOptions[Math.floor(Math.random() * chosenOptions.length)]
+      // This is where the password is generated
+      var generatePassword = ""
 
-  }
+      for (var i = 0; i < pwLength; i++) {
 
-  return generatePassword
+        // Here is where the characters are selected to go into the actual password
+        generatePassword += chosenOptions[Math.floor(Math.random() * chosenOptions.length)]
 
+      }
+
+      return generatePassword
+
+    }  
 }
 
 
