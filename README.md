@@ -29,7 +29,7 @@ This assignment involved quite a bit of pseudo-coding in the console as well as 
 
 This process is broken down into two parts:  How do we post the password on the page (already provided) and how do we generate the password itself.  The second function, that generates the password, is what I created.
 
-First we ensure that the user selects the appropraite criteria to create a valid password, by verifying the character count and character types meet requirements.  This is done through a series of prompts and confirms.  
+First we ensure that the user selects the appropriate criteria to create a valid password, by verifying the character count and character types meet requirements.  This is done through a series of prompts and confirms.  
 
 Next, I created four arrays to house the possible selections for each of the four character categories the user could choose:  Upper case letters, Lower case letters, numbers, and special characters.
 
@@ -43,7 +43,7 @@ Styling:
 
 I imported the Bootstrap CDN not as much for customization, but for the ease of responsiveness it gives pages and the assurance that the rules already in place for visual functionality will carry over with the slight cosmetic changes I made.
 
-Visually, I chose a simple minimal font and color palette based off of quartz, one of the most impenetrable materials on earth.  The variation in this gives us a background theme that's more texture than image and gives the page depth while ensuring that ease of navigation and use is the top priority.
+Visually, I chose a simple minimal font and color palette based off of quartz, one of the most impenetrable materials on earth.  The variation in this gives us a background theme that's more texture than image and gives the page depth while ensuring that ease of navigation and use is the top priority.  While it may not always necessarily be about exactly how the page looks, it is extremely important to clients that it does look like some thought and care went into it.
 
 Internally, I was able to make the HTML more user friendly with semantic elements and notations per section, should a future user want to make minor changes to the verbiage and layout of the page in the future.  
 
