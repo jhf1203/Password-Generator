@@ -30,12 +30,14 @@ function generatePassword() {
     } else {
 
       alert("Sorry, your password must be between 8 and 128 characters in length.  Please click the button and try again.");
+      return "";
 
       }
 
     if (pwUppers==false && pwLowers==false && pwNumbers==false && pwSymbols==false) {
 
-      alert("Sorry, your password must contain at least one of the following character types:  Upper-case letters, lower-case letters, numbers, special characters.  Please click the button and try again.")
+      alert("Sorry, your password must contain at least one of the following character types:  Upper-case letters, lower-case letters, numbers, special characters.  Please click the button and try again.");
+      return "";
 
     } else {
 
@@ -89,7 +91,16 @@ function generatePassword() {
       return generatePassword
 
     }  
+
+   
 }
+
+console.log(password);
+console.log(password.value);
+console.log(chosenOptions);
+
+
+
 
 
 

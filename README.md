@@ -33,9 +33,9 @@ First we ensure that the user selects the appropriate criteria to create a valid
 
 Next, I created four arrays to house the possible selections for each of the four character categories the user could choose:  Upper case letters, Lower case letters, numbers, and special characters.
 
-To create a randomized password where the character selections will vary by user, I then set up an initially empty array (line 47) that will populate itself with between one and four strings.  These strings are confirmed by the user on lines 25-28 and are added to the empty array through a series of conditionals that live in lines 50-72.
+To create a randomized password where the character selections will vary by user, I then set up an initially empty array (line 54) that will populate itself with between one and four strings.  These strings are confirmed by the user on lines 25-28 and are added to the empty array through a series of conditionals that live in lines 57-79.
 
-The loop on line 77 and the logic on line 80 choose one random character housed in the array on line 47 and populate the generatePassword variable on line 75.  This loop runs for the duration that the user selected for their character count in the initial prompt on line 20, and writes itself to the page using the function already provided on line 5.
+The loop on line 84 and the logic on line 87 choose one random character housed in the array on line 54 and populate the generatePassword variable on line 75.  This loop runs for the duration that the user selected for their character count in the initial prompt on line 20, and writes itself to the page using the function already provided on line 5.
 
 ________________________________________________
 
