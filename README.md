@@ -45,6 +45,8 @@ I imported the Bootstrap CDN not as much for customization, but for the ease of 
 
 Visually, I chose a simple minimal font and color palette based off of quartz, one of the most impenetrable materials on earth.  The variation in this gives us a background theme that's more texture than image and gives the page depth while ensuring that ease of navigation and use is the top priority.
 
+Internally, I was able to make the HTML more user friendly with semantic elements and notations per section, should a future user want to make minor changes to the verbiage and layout of the page in the future.  
+
 - Jim
 
 
