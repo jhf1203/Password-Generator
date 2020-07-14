@@ -10,27 +10,37 @@ html,
 body,
 .wrapper {
 
-  height: 100%;
+  /* Box-Model */
   margin: 0;
   padding: 0;
+
+  /* Positioning */
+  height: 100%;
 
 }
 
 
 body {
 
+  /* Typography */
   font-family: 'Inconsolata', monospace;
 
 }
 
 
 header {
-  text-align: center;
+  
+  /* Box-Model */
   padding: 20px;
   padding-top: 0px;
   padding-bottom: 5px;
   margin-top:0;
+  
+  /* Typography */
+  text-align: center;
   color: #dddbcf;
+  
+  /* Aesthetic */
   background-color:#16161a;  
   opacity: .7;
   
@@ -39,6 +49,7 @@ header {
 /* Text style added by me */
 h1 {
 
+  /* Typography */
   font-weight:bold;
 
 }
@@ -46,15 +57,16 @@ h1 {
 /* Text style added by me */
 h2 {
 
+  /* Typography */
   text-align:center;
 
 }
 
 /* Background image added by me */
 .bkgd {
+
     /* Positioning */
     background-size:100%;
-    
     background-repeat:no-repeat;
     background-position:center;
     min-width: 100%;
@@ -62,80 +74,119 @@ h2 {
     position:fixed;
     
     /*Aesthetic */
-    background-image: url("../Assets/Texture-bkgd.jpg"); 
+    background-image: url("./Assets/Texture-bkgd.jpg"); 
     opacity:0.3;
   }
 
 
 .card {
-  background-color:#eeeeed;
+
+  /* Box-Model */
+  margin: 0 auto;
+  margin-top: 18px;
   border-radius: 5px;
   border-width: 1px;
   border-color: #221f1e;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  padding: 30px 40px;
+
+  /* Positioning */
+  max-width: 800px;
+
+  /* Typography */
   color: #221f1e;
   font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
-  margin-top: 18px;
+
+  /* Aesthetic */
+  background-color:#eeeeed;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   opacity:0.8;
+
 }
 
 
 .card-header::after {
-  content: " ";
-  display: block;
+  
+  /* Positioning */
   width: 100%;
-  background: #16161a;
   height: 2px;
+  display: block;
+
+  /* Aesthetics */
+  content: " ";
+  background: #16161a;
 }
 
 
 .card-body {
+
+  /* Positioning */
   min-height: 100px;
+
 }
 
 
 .card-footer {
+
+  /* Typography */
   text-align: center;
+
 }
 
 
 .card-footer::before {
-  content: " ";
-  display: block;
+
+  /* Positioning */
   width: 100%;
-  background: #16161a;
   height: 2px;
+  display: block;
+
+  /* Aesthetic */
+  content: " ";
+  background: #16161a;
 }
 
 
 .card-footer::after {
-  content: " ";
+
+  /* Positioning */
   display: block;
   clear: both;
+
+  /* Aesthetic */
+  content: " ";
+
 }
 
 
 .btn {
+  
+  /* Box-Model */
+  margin: 16px 16px 16px 20px;
   border: none;
-  background-color:#16161a;
   border-radius: 25px;
+  padding: 14px 34px;
+
+  /* Positioning */
+  display: inline-block;
+  line-height: 22px;
+
+  /* Typography */
+  color:#eeeeed;
+  font-size: 22px;
+  text-align: center;
+
+  /* Aesthetic */
+  background-color:#16161a;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color:#eeeeed;
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
+
 }
 
 
 button[disabled] {
+
+  /* Aesthetic */
   cursor: default;
   background: #9c9d9e;
 }
@@ -143,36 +194,51 @@ button[disabled] {
 
 .float-right {
 
+  /* Positioning */
   float: right;
+
 }
 
 
 #password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+
+  /* Box-Model */
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
-  display: block;
-  width: 100%;
+  border: 2px dashed #9c9d9e;
+  border-radius: 6px;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #9c9d9e;
-  border-radius: 6px;
+
+  /* Positioning */
+  display: block;
+  width: 100%;
   resize: none;
   overflow: hidden;
+ 
+   /* Typography */
+  font-size: 1.2rem;
+  text-align: center;
+
+  
+  /* Aesthetic */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
 }
 
 /* Style added by me */
 .btn:hover {
 
-    color:#ac8c51
+  /* Typography */
+  color:#ac8c51
+
 }
+
 
 /* Media Queries (already provided) */
 
